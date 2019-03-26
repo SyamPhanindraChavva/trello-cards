@@ -1,0 +1,190 @@
+.board{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.list-wrapper{  
+  width: 272px;
+  margin: 0 4px;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.delete-tasks{
+  float: right;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.list {
+    background-color: #dfe3e6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+}
+
+h2 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    margin: 0 0 8px;
+    display: inline-block;
+}
+
+.list-header{
+  flex: 0 0 auto;
+  padding: 10px 8px 8px;
+  position: relative;
+  min-height: 20px;
+}
+
+.list-cards{
+    margin-bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 4px;
+    padding: 0 4px;
+    z-index: 1;
+    min-height: 5px;
+}
+
+.list-card{
+  word-break: break-word;
+  padding: 3px 3px 3px 7px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(9,45,66,.25);
+  cursor: pointer;
+  display: block;
+  margin-bottom: 8px;
+  max-width: 300px;
+  min-height: 20px;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+}
+
+.open-card-composer {
+    border-radius: 0 0 3px 3px;
+    color: #6b808c;
+    display: block;
+    flex: 0 0 auto;
+    padding: 8px;
+    position: relative;
+}
+
+.hide{
+  display: none;
+}
+
+li{
+  list-style: none;
+}
+
+.card-add-button{
+  margin: 0 0 6px 8px;
+}
+.list-close-button, .card-close-button{
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.list-card-composer-textarea{
+  width: 95%;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  resize: none;
+  height: 54px;
+  padding-left: 10px;
+  margin-left: 7px;
+  margin-right: 7px;
+  border-radius: 2.5px;
+}
+.list-delete-button{
+  float: right;
+  cursor: pointer;
+  padding-top: 22px;
+}
+
+.dialog-box{
+  float:left; 
+  margin:12px 12px 20px 0;
+}
+
+.edit-card{
+  display: none !important;
+  float: right;
+  padding-right: 7px;
+  padding-top: 3px;
+}
+
+.list-card:hover .edit-card{
+  display: inline-block !important;
+}
+
+#dialog-confirm #textarea{
+  border: 1px solid skyblue;
+  min-height: 100px;
+  padding: 0 5px;
+}
+
+#dialog-confirm #textarea:focus{
+  border: 0;
+}
+.js-save-edit{
+    margin-top: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #5aac44;
+    border: none;
+    color: #fff;
+}
+
+.list-name-input{
+  padding-left: 10px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  box-shadow: inset 0 0 0 2px #0079bf;
+  display: block;
+  margin: 0;
+  transition: margin 85ms ease-in,background 85ms ease-in;
+  width: 100%;
+}
+.mod-add{
+  margin-top: 20px;
+  background-color: rgba(0,0,0,.12);
+  cursor: pointer;
+  border-radius: 3px;
+  height: auto;
+  min-height: 32px;
+  padding: 6px;
+}
+.plus-button{
+  padding-left: 3px;
+  padding-right: 5px;
+}
+.mod-add:hover{
+  background-color: rgba(0,0,0,.24);
+}
+
+#sortable1, #sortable2 {
+    border: 1px solid #eee;
+    width: 142px;
+    min-height: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: left;
+    margin-right: 10px;
+  }
+#sortable1 li, #sortable2 li {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+}
